@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'shopify_app'
 gem 'rails_12factor'
+gem 'slim'
 
 group :production do
   gem 'pg'

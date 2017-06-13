@@ -1,0 +1,14 @@
+-content_for :javascript
+  javascript:
+    ShopifyApp.ready(function(){
+      ShopifyApp.Bar.initialize({
+        title: 'Product Groups',
+        icon: ''
+      });
+    });
+
+h2 Products Groups
+ 
+ul
+  -@product_groups.each do |group|
+    li= link_to group.name, group
