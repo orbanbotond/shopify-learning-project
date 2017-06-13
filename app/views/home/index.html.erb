@@ -2,17 +2,17 @@
   <script type="text/javascript">
     ShopifyApp.ready(function(){
       ShopifyApp.Bar.initialize({
-        title: 'Home',
+        title: 'Product Groups',
         icon: ''
       });
     });
   </script>
 <% end %>
 
-<h2>Products</h2>
+<h2>Product Groups</h2>
 
 <ul>
-  <% @products.each do |product| %>
-    <li><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></li>
+  <% @product_groups.each do |group| %>
+    <li><%= link_to group.name, group %></li>
   <% end %>
 </ul>
