@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'shopify_app'
+gem 'shopify_app', '7.2.8'
 gem 'rails_12factor'
 gem 'slim'
 

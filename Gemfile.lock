@@ -180,9 +180,9 @@ GEM
     shopify_api (4.9.0)
       activeresource (>= 3.0.0)
       rack
-    shopify_app (7.2.9)
+    shopify_app (7.2.8)
       omniauth-shopify-oauth2 (~> 1.1.11)
-      rails (>= 5.0.0)
+      rails (>= 4.2.6)
       shopify_api (>= 4.3.2)
     slim (3.0.8)
       temple (>= 0.7.6, < 0.9)
@@ -240,7 +240,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
-  shopify_app
+  shopify_app (= 7.2.8)
   slim
   spring
   spring-watcher-listen (~> 2.0.0)
