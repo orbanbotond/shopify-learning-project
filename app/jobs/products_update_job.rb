@@ -3,6 +3,7 @@ class ProductsUpdateJob < ActiveJob::Base
     shop = Shop.find_by(shopify_domain: shop_domain)
 
     shop.with_shopify_session do
+      binding.pry
     end
   end
 end

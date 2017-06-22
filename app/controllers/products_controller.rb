@@ -1,6 +1,8 @@
-class ProductsController < ShopifyApp::AuthenticatedController
-  skip_around_action :shopify_session, only: [:gallery]
-  skip_before_action :login_again_if_different_shop, only: [:gallery]
+#this works too however this won't give us support for multitennanted app..
+class ProductsController < ApplicationController
+# class ProductsController < ShopifyApp::AuthenticatedController
+  # skip_around_action :shopify_session, only: [:gallery]
+  # skip_before_action :login_again_if_different_shop, only: [:gallery]
   after_action :set_liquid_content_type, only: [:gallery]
 
   def gallery
