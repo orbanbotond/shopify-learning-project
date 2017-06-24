@@ -1,5 +1,6 @@
 class ShopifyProduct < ApplicationRecord
   belongs_to :product_group
+  belongs_to :shop
 
   delegate :title, to: :store_in_shopify
 

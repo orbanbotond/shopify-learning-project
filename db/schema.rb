@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170613165747) do
+ActiveRecord::Schema.define(version: 20170624165442) do
 
   create_table "product_groups", force: :cascade do |t|
     t.string "name"
@@ -23,7 +23,11 @@ ActiveRecord::Schema.define(version: 20170613165747) do
     t.string "shopify_product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "shop_id"
+    t.string "image_url"
+    t.string "name"
     t.index ["product_group_id"], name: "index_shopify_products_on_product_group_id"
+    t.index ["shop_id"], name: "index_shopify_products_on_shop_id"
   end
 
   create_table "shops", force: :cascade do |t|
