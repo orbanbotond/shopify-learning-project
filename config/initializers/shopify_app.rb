@@ -6,8 +6,8 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
 
   config.webhooks = [
-    {topic: 'products/create', address: 'https://e711ec89.ngrok.io/webhooks/products_create', format: 'json'},
-    {topic: 'products/update', address: 'https://e711ec89.ngrok.io/webhooks/products_update', format: 'json'},
-    {topic: 'products/delete', address: 'https://e711ec89.ngrok.io/webhooks/products_delete', format: 'json'},
+    {topic: 'products/create', address: 'http://52b00abd.ngrok.io/webhooks/products_create', format: 'json'},
+    {topic: 'products/update', address: 'http://52b00abd.ngrok.io/webhooks/products_update', format: 'json'},
+    {topic: 'products/delete', address: 'http://52b00abd.ngrok.io/webhooks/products_delete', format: 'json'},
   ]
 end
