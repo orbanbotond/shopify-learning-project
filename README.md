@@ -6,7 +6,7 @@ https://github.com/pixedelic/Camera
 
 -DONE The products in the slideshow should be manageable from the Shopify Admin.
 
--Sync Rake Task...
+-NOT NEEDED Sync Rake Task...
 
 -Use a ScriptTag to render in your generic JavaScript that works on all stores. You can use an open source javascript plugin for the slideshow but make sure you follow Shopify's best practices for using JavaScript.
 
@@ -14,7 +14,7 @@ https://github.com/pixedelic/Camera
 
 -DONE Save/cache products in the slideshow and their image URLs but use WebHooks to make sure the cache never gets out of date. The product image should come from the Shopify Product.
 
--The application should be multi-tenanted (support multiple stores installing it).
+-TEST IT - DONE The application should be multi-tenanted (support multiple stores installing it).
 
 -You should set up two demo Shopify stores before your interview. One where the application should be pre-installed, and another which you can do a fresh install of the application on during the interview.
 
