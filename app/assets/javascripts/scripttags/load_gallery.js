@@ -53,8 +53,8 @@
           });
 
           $('.slides', '.toptal-product-slider').slidesjs({
-            width: 940,
-            height: 528,
+            width: 500,
+            height: 328,
             navigation: false
           });
         }

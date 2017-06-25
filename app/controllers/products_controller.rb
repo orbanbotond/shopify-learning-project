@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
     @current_shop = Shop.find_by shopify_domain: params[:shop]
     respond_to do |format|
       format.html { render layout: false }
-      format.json { render json: @current_shop.shopify_products }
+      format.json { render json: @current_shop.shopify_products.select{|x|x.image_url.present?} }
     end
   end
 
