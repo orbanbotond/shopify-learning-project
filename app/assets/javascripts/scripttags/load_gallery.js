@@ -1,3 +1,4 @@
+debugger
 (function(){
   var loadScript = function(url, callback){
     console.debug('Loading: ' + url);
@@ -38,12 +39,18 @@
       console.debug('camera loaded...');
       console.debug('starting  to process the gallery...');
 
-      // $('.toptal-product-slider').size
-        // $('#slides').slidesjs({
-        //   width: 940,
-        //   height: 528,
-        //   navigation: false
-        // });
+      $.ajax({
+        url: '/a/gallery',
+        dataType: 'json'
+      }).done(function(data) {
+        console.debug(data);
+        // $('.toptal-product-slider').size
+          // $('#slides').slidesjs({
+          //   width: 940,
+          //   height: 528,
+          //   navigation: false
+          // });
+      });
     });
 
     // var products_json   = #{raw @current_shop.shopify_products.to_json};
