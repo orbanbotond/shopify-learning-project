@@ -12,7 +12,6 @@ ShopifyApp.configure do |config|
   ]
 
   config.scripttags = [
+    { event:'onload', src: 'http://52b00abd.ngrok.io/assets/scripttags/load_gallery.js' }
   ]
-    # { event:'onload', src: 'http://52b00abd.ngrok.io/assets/scripttags/load_gallery.js' }
-    # { event:'onload', src: 'http://52b00abd.ngrok.io/assets/scripttags/load_jquery.js' }
 end

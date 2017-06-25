@@ -43,7 +43,7 @@ javascript:
 
       loadScript('http://52b00abd.ngrok.io/assets/jquery.slides.min.js', function(){
         console.debug('jquery: ' + jQuery);
-        console.debug('camera loaded...');
+        console.debug('camera loaded on the gallery page...');
           $('#slides').slidesjs({
             width: 940,
             height: 528,
@@ -67,16 +67,4 @@ javascript:
     } else {
       myAppJavaScript(jQuery);
     }
-  })();
-
-javascript:
-  (function(){
-    // At this point the $ is not accessible.
-    // $(function(){
-    //   // $('#gallery').slidesjs({
-    //   //   width: 940,
-    //   //   height: 528,
-    //   //   navigation: false
-    //   // });
-    // });
   })();
