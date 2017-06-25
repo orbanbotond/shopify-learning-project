@@ -1,4 +1,3 @@
-debugger
 (function(){
   var loadScript = function(url, callback){
     console.debug('Loading: ' + url);
@@ -44,12 +43,21 @@ debugger
         dataType: 'json'
       }).done(function(data) {
         console.debug(data);
-        // $('.toptal-product-slider').size
-          // $('#slides').slidesjs({
-          //   width: 940,
-          //   height: 528,
-          //   navigation: false
-          // });
+
+        if($('.toptal-product-slider').length != 0){
+          $('.toptal-product-slider').append("<div class='slides'><a href='#' class='slidesjs-previous slidesjs-navigation'><i class='icon-chevron-left icon-large' /></a><a href='#' class='slidesjs-next slidesjs-navigation'><i class='icon-chevron-right icon-large' /></a> </div>");
+          $slides = $('.slides', '.toptal-product-slider');
+
+          $(data).each(function( index, element ) {
+            $slides.prepend("<img src='" + element.image_url + "' alt='" + element.name + "' >");
+          });
+
+          $('.slides', '.toptal-product-slider').slidesjs({
+            width: 940,
+            height: 528,
+            navigation: false
+          });
+        }
       });
     });
 
@@ -60,7 +68,6 @@ debugger
       console.debug('Container Div is detected.');
     }
   };
-debugger
   if ((typeof jQuery === 'undefined') || (parseFloat(jQuery.fn.jquery) < 3.2)) {
     loadScript('https://code.jquery.com/jquery-3.2.1.min.js', function(){
       jQuery32 = jQuery.noConflict(true);
