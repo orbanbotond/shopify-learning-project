@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
   end
 
   def set_liquid_content_type
-    # self.content_type = 'application/json'
-    self.content_type = 'application/liquid'
+    self.content_type = 'application/json'
+    # self.content_type = 'application/liquid'
   end
 end
