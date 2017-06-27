@@ -33,7 +33,7 @@
 
     window.jQuery = $;
 
-    loadScript('http://52b00abd.ngrok.io/assets/jquery.slides.min.js', function(){
+    loadScript('http://e711ec89.ngrok.io/assets/jquery.slides.min.js', function(){
       console.debug('jquery: ' + jQuery);
       console.debug('camera loaded...');
       console.debug('starting  to process the gallery...');
