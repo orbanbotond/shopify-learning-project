@@ -3,8 +3,10 @@
 div id='slides'
   - @current_shop.shopify_products.each do |product|
     img src=product.image_url alt=product.name
-  <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-  <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+  a href="#" class="slidesjs-previous slidesjs-navigation"
+    i class="icon-chevron-left icon-large"
+  a href="#" class="slidesjs-next slidesjs-navigation"
+    i class="icon-chevron-right icon-large"
 
 javascript:
   (function(){
